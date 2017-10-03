@@ -1,0 +1,32 @@
+.loading-content {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.loading-content-loading {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+
+.loading-content-loader {
+    position: relative;
+    top: -22px;
+    width: 44px;
+    height:44px;
+}
+
+.loading-content-content {
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: scroll;
+}

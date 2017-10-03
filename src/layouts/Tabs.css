@@ -1,0 +1,39 @@
+.tabs{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs-header{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid rgb(0,122,255);
+    border-bottom: 1px solid rgb(0,122,255);
+    line-height: 38px;
+    box-sizing: border-box;
+}
+
+.tabs-header > * {
+    flex:1; 
+    text-align: center;
+    color: rgb(0,122,255);
+    background-color: rgb(255,255,255);
+    transition-property: background-color;
+    transition-duration: 100ms;
+}
+
+.tabs-header > *.selected {
+    color: rgb(255,255,255);
+    background-color: rgb(0,122,255);
+}
+
+.tabs-content {
+    position: absolute;;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right:0;
+    overflow: scroll;
+}
