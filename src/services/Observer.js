@@ -7,7 +7,10 @@ export default class Observer {
     }
 
     dispose() {
-        this.isDisposed = true;
+        if (!this.isDisposed) {
+            this.isDisposed = true;
+            this.unbind();
+        }
     }
 
     start() {
